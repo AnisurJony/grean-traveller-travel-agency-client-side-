@@ -8,12 +8,12 @@ import useAuth from '../../hooks/useAuth';
 const Header = () => {
     const { user, logOut } = useAuth();
     return (
-        <>
+        <div>
             <Navbar bg="dark" variant="dark" sticky="top" collapseOnSelect expand="lg" >
                 <Container>
                     <Navbar.Brand href="#home">Green Travellers</Navbar.Brand>
                     <Navbar.Toggle />
-                    <Navbar.Collapse className="justify-content-end">
+                    <Navbar.Collapse className=" justify-content-end">
                         <Nav.Link as={Link} to='/home'>Home</Nav.Link>
                         <Nav.Link as={Link} to='/aboutus'>About Us</Nav.Link>
                         <Nav.Link as={Link} to='/places'>Places</Nav.Link>
@@ -33,7 +33,7 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </>
+        </div>
     );
 };
 
