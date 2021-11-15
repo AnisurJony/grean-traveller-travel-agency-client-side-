@@ -21,7 +21,7 @@ const BookNow = () => {
         }
 
 
-        fetch('http://localhost:5000/orders', {
+        fetch('https://safe-crag-67288.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -41,7 +41,7 @@ const BookNow = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://safe-crag-67288.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])

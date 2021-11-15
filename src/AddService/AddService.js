@@ -11,7 +11,7 @@ const AddService = () => {
     const onSubmit = data => {
 
 
-        fetch('http://localhost:5000/servcies', {
+        fetch('https://safe-crag-67288.herokuapp.com/servcies', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
