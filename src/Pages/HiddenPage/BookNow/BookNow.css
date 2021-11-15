@@ -1,0 +1,22 @@
+
+form input{
+    width: 300px;
+    border-radius: 15px;
+    border: 2px solid #0DCAF0;
+}
+
+.style-inpute{
+    width: 140px;
+   
+
+}
+
+textarea {
+    border-radius: 15px;
+    border: 2px solid #0DCAF0;
+}
+.book-btn{
+    background-color: #0DCAF0 ;
+    width: 100px;
+   
+}

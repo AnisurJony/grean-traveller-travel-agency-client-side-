@@ -1,0 +1,48 @@
+.caption{
+    display: flex;
+
+   margin-bottom: 250px;
+ 
+
+}
+.text-style{
+    text-align: justify;
+}
+
+.book-btn{
+    border-radius: 15px;
+    border: none;
+    padding: 4px 12px;
+   width: 200px;
+ 
+    background-color: goldenrod;
+}
+.book-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.text-style h1{
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 1;
+    color: black;
+}
+.text-style h2{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: .5;
+    color: black;
+
+}
+.text-style p{
+    font-size: 20px;
+    line-height: 2;
+}
+.style-header{
+    /* font-weight: 300; */
+    color:goldenrod ;
+}
+.text-style p{
+    color: #8A2BE2;
+}
