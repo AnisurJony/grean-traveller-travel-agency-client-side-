@@ -13,7 +13,7 @@ const PlaceOrder = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://safe-crag-67288.herokuapp.com/services')
             .then(res => res.json())
             .then(data => {
 
