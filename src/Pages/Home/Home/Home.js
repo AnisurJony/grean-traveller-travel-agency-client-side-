@@ -8,13 +8,14 @@ import ContactInfo from '../ContactInfo/ContactInfo';
 import HomeServices from '../HomeServices/HomeServices';
 
 
+
 const Home = () => {
     return (
-        <div className="home">
+        <div>
+
             <Banner></Banner>
             <ContactInfo></ContactInfo>
             <HomeServices></HomeServices>
-
             <Footer></Footer>
         </div>
     );

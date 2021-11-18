@@ -23,7 +23,7 @@ const Banner = () => {
                             <h2>Welcome to</h2>
                             <h1><span className="style-header">Green </span>Travellers</h1>
                             <p>Grean Travellers has international reputation about travelling and touring guid</p>
-                            <button className="book-btn"><Link to="/booknow">Book Now</Link></button>
+                            <button className="book-btn"><Link to="/services">Explore</Link></button>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -39,7 +39,7 @@ const Banner = () => {
                             <h2>Welcome to</h2>
                             <h1><span className="style-header">Green </span>Travellers</h1>
                             <p>Grean Travellers has international reputation about travelling and touring guid</p>
-                            <button className="book-btn"><Link to="/booknow">Book Now</Link></button>
+                            <button className="book-btn"><Link to="/services">Explore</Link></button>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -55,7 +55,7 @@ const Banner = () => {
                             <h2>Welcome to</h2>
                             <h1><span className="style-header">Green </span>Travellers</h1>
                             <p>Grean Travellers has international reputation about travelling and touring guid</p>
-                            <button className="book-btn"><Link to="/booknow">Book Now</Link></button>
+                            <button className="book-btn"><Link to="/services">Explore</Link></button>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -71,7 +71,7 @@ const Banner = () => {
                             <h2>Welcome to</h2>
                             <h1><span className="style-header">Green </span>Travellers</h1>
                             <p>Grean Travellers has international reputation about travelling and touring guid</p>
-                            <button className="book-btn"><Link to="/booknow">Book Now</Link></button>
+                            <button className="book-btn"><Link to="/services">Explore</Link></button>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -87,7 +87,7 @@ const Banner = () => {
                             <h2>Welcome to</h2>
                             <h1><span className="style-header">Green </span>Travellers</h1>
                             <p>Grean Travellers has international reputation about travelling and touring guid</p>
-                            <button className="book-btn"><Link to="/booknow">Book Now</Link></button>
+                            <button className="book-btn"><Link to="/services">Explore</Link></button>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -103,7 +103,7 @@ const Banner = () => {
                             <h2>Welcome to</h2>
                             <h1><span className="style-header">Green </span>Travellers</h1>
                             <p>Grean Travellers has international reputation about travelling and touring guid</p>
-                            <button className="book-btn"><Link to="/booknow">Book Now</Link></button>
+                            <button className="book-btn"><Link to="/services">Explore</Link></button>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>

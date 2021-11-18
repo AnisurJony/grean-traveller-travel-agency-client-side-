@@ -6,11 +6,18 @@ import { Link } from 'react-router-dom';
 const PlaceOrder = () => {
     const [services, setServices] = useState([]);
     const [selectedService, setSelectedService] = useState({});
+    const [id, setId] = useState('');
     const { serviceId } = useParams();
-    console.log(selectedService)
+    console.log('vera', selectedService)
+    useEffect(() => {
+        setId(serviceId)
+    }, [])
+
+    console.log(serviceId)
+    console.log(services)
 
     useEffect(() => {
-        fetch('https://safe-crag-67288.herokuapp.com/services')
+        fetch('http://localhost:5000/services')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
@@ -19,6 +26,7 @@ const PlaceOrder = () => {
     useEffect(() => {
         const selectedService = services.find(service => service._id === serviceId);
         setSelectedService(selectedService);
+        console.log('hi', selectedService)
     }, [serviceId, services])
 
 
@@ -33,7 +41,7 @@ const PlaceOrder = () => {
             <p>{selectedService?._id}</p>
             <p>Price{selectedService?.price}</p>
             <p>Price{selectedService?.description}</p>
-            <Link to={`/booking/${selectedService?._id}`}> <Button>Place Order</Button></Link>
+            <Link to={`/booking/${serviceId}`}> <Button>Place Order</Button></Link>
 
         </div>
     );

@@ -10,6 +10,10 @@ const BookNow = () => {
     const [services, setServices] = useState([]);
     const [selectedService, setSelectedService] = useState({});
     const { serviceId } = useParams();
+    console.log(serviceId)
+    console.log(selectedService)
+    console.log(serviceId)
+
 
     const onSubmit = data => {
 
@@ -49,6 +53,7 @@ const BookNow = () => {
 
     useEffect(() => {
         const selectedService = services.find(service => service._id === serviceId);
+        console.log(selectedService)
         setSelectedService(selectedService);
     }, [serviceId, services])
 

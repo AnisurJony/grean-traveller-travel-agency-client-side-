@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Service from '../../Service/Service';
-import './HomeService.css'
+
 const HomeServices = () => {
     const [services, setServices] = useState([]);
 
@@ -10,8 +10,11 @@ const HomeServices = () => {
             .then(data => setServices(data));
     }, [])
     return (
+
         <div className="services">
-            <h2 className="text-primary mt-3">Our services</h2>
+
+            <h2 className="text-primary my-5">Our services</h2>
+
             <div className="service-container">
                 {
                     services.slice(0, 6).map(service => <Service
@@ -21,6 +24,7 @@ const HomeServices = () => {
                 }
             </div>
         </div>
+
     );
 };
 
