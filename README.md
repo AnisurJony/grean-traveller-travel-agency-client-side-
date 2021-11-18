@@ -10,7 +10,7 @@ https://green-traveller-f6ecb.web.app/
 
 In the project we have used following technologies:
 
-### React.js
+## React.js
 
 
 Most used technology now a days in the field of Web development, easy to use. 

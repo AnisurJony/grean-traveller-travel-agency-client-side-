@@ -4,30 +4,25 @@ import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 
 const PlaceOrder = () => {
-    const [services, setServices] = useState([]);
-    const [selectedService, setSelectedService] = useState({});
-    const [id, setId] = useState('');
-    const { serviceId } = useParams();
-    console.log('vera', selectedService)
-    useEffect(() => {
-        setId(serviceId)
-    }, [])
 
-    console.log(serviceId)
-    console.log(services)
+    const [selectedService, setSelectedService] = useState({});
+
+    const { serviceId } = useParams();
+
+
+
 
     useEffect(() => {
         fetch('http://localhost:5000/services')
             .then(res => res.json())
-            .then(data => setServices(data))
-    }, [])
+            .then(data => {
 
+                const service = data.find(service => service._id == serviceId)
 
-    useEffect(() => {
-        const selectedService = services.find(service => service._id === serviceId);
-        setSelectedService(selectedService);
-        console.log('hi', selectedService)
-    }, [serviceId, services])
+                setSelectedService(service)
+            })
+    }, [serviceId])
+
 
 
 
